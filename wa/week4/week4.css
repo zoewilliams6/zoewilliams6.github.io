@@ -6,23 +6,23 @@ body {
 
 h1 {
 font-size: 32px;
-color: #903029;
+color: #3D3A4B;
 }
 
 
 h2 {
 font-size: 25px;
-color: #5E7F5C
+color: #7796CB
 }
 
 h3 {
 font-size: 20px;
-color: #903029
+color: #3D3A4B
 }
 
 h4 {
 font-size: 16px;
-color: #903029
+color: #3D3A4B
 }
 
 p {
@@ -32,19 +32,19 @@ p {
 
 .small-text {
 font-size: 12px;
-color: #903029
+color: #3D3A4B
 }
 
 a:hover {
       text-decoration: underline;
-      color: #7796CB;
+      color: #3D3A4B;
     }
-    a:visited { color: #5E7F5C; }
+    a:visited { color: #7796CB; }
 
 .nav-button { 
     font-size: 20px;
     border-radius: 4px;
-    background-color: #903029;
+    background-color: #3D3A4B;
     color: #fff !important;
     cursor: pointer; 
     border: none; 
@@ -54,7 +54,7 @@ a:hover {
 }
 
 .nav-button:hover {
-    background-color: #5E7F5C;
+    background-color: #7796CB;
     color: #fff !important;
     text-decoration: none !important;
 }
