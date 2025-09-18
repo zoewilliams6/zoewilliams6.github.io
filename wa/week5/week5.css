@@ -1,0 +1,80 @@
+/* Nav container */
+.nav-brand {
+   font-family: "p22-toybox-blocks", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 28pt;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Nav menu */
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+.nav-menu a:hover {
+    background-color: #34495e;
+    color: crimson;
+}
+
+/* Hamburger button */
+.nav-toggle {
+    display: none; /* hidden on desktop */
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* minimum touch target */
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu.hide {
+        display: none;
+    }
+
+    .nav-menu.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 180px;
+        background-color: #34495e;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 4px;
+    }
+}
