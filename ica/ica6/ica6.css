@@ -1,0 +1,28 @@
+.gallery-container { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+        "header1 header1"
+        "nav2    sidebar2"
+        "main3   sidebar3";
+    width: 315px;
+}
+/* 
+.gallery-header { grid-area: header; }
+.gallery-nav { grid-area: nav; }
+.gallery-grid { grid-area: main; }
+.gallery-sidebar { grid-area: sidebar; } */
+
+.gallery-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem; 
+}
+.photo-card { 
+    height: 200px; 
+}
+.featured { 
+    height: 300px; 
+    grid-column: span 2
+}
