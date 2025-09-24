@@ -8,11 +8,6 @@
         "main3   sidebar3";
     width: 315px;
 }
-/* 
-.gallery-header { grid-area: header; }
-.gallery-nav { grid-area: nav; }
-.gallery-grid { grid-area: main; }
-.gallery-sidebar { grid-area: sidebar; } */
 
 .gallery-grid { 
     display: grid; 
