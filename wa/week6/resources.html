@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Resources</title>
+    <link rel="stylesheet" href="https://use.typekit.net/wgl2klx.css">
+    <link rel="stylesheet" href="week6.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="main-nav">
+        <div class="nav-brand">Community Hub</div>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu hide">
+            <li><a href="week6.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+  <!-- Rescource page layout -->
+    <main class="resource-page">
+        <header class="header">
+            <h1>Community Resources</h1>
+            <p>Find tools, guides, and support materials designed for our members.</p>
+        </header>
+
+        <aside class="filters">
+            <h2>Filter Resources</h2>
+            <form>
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="all">All</option>
+                    <option value="contracts">Contracts</option>
+                    <option value="mentorship">Mentorship</option>
+                    <option value="productivity">Productivity</option>
+                </select>
+                <br><br>
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="all">All</option>
+                    <option value="guide">Guide</option>
+                    <option value="article">Article</option>
+                    <option value="template">Template</option>
+                </select>
+            </form>
+        </aside>
+
+        <section class="content">
+            <article data-category="contracts" data-type="template">
+                <h2>Freelance Contract Template</h2>
+                <p>A free, customizable contract to help secure projects.</p>
+            </article>
+            <article data-category="productivity" data-type="article">
+                <h2>Managing Time & Avoiding Burnout</h2>
+                <p>Strategies to maintain mental health while juggling multiple projects.</p>
+            </article>
+            <article data-category="mentorship" data-type="guide">
+                <h2>Mentorship Connections</h2>
+                <p>Learn how to find mentors or mentor others in the early-career freelance community.</p>
+            </article>
+        </section>
+
+        <footer class="r-footer">
+            <p>2025 Community Hub. Resources Section.</p>
+        </footer>
+    </main>
+
+    <script src="week6.js"></script>
+</body>
+</html>
