@@ -9,7 +9,7 @@ a {
     color: inherit;
 }
 
-   /* Navigation Grid */
+/* Navigation Grid */
 
 .main-nav {
     display: grid;
@@ -109,7 +109,7 @@ a {
 }
 
 
-   /* Homepage Grid  */
+/* Homepage Grid  */
 
 .homepage {
     display: grid;
@@ -155,7 +155,7 @@ a {
 }
 
 
-   /* Resource Page Grid */
+/* Resource Page Grid */
 
 .resource-page {
     display: grid;
@@ -193,7 +193,7 @@ a {
     text-align: center;
 }
 
-   /* Contact Page Grid */
+/* Contact Page Grid */
 
 .contact-page {
   display: grid;
@@ -235,31 +235,81 @@ a {
       "footer";
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 768px) {
   .homepage {
     grid-template-areas:
-      "info"
-      "form"
+      "hero"
+      "news"
+      "events"
+      "sidebar"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .resource-page {
+    grid-template-areas:
+      "header"
+      "filters"
+      "content"
       "footer";
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 768px) {
-  .resource-page {
+/* phone screen 375px */
+
+@media (max-width: 375px) {
+  .contact-page {
     grid-template-areas:
       "info"
       "form"
       "footer";
     grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .contact-info,
+  .contact-form-section {
+    padding: 1rem;
+  }
+
+  .homepage {
+    grid-template-areas:
+      "hero"
+      "news"
+      "events"
+      "sidebar"
+      "footer";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .resource-page {
+    grid-template-areas:
+      "header"
+      "filters"
+      "content"
+      "footer";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-brand {
+    font-size: 18pt; 
+  }
+
+  .nav-menu {
+    gap: 0.75rem; 
+  }
+
+  .nav-toggle {
+    padding: 6px; 
   }
 }
 
-/* Phone Screen 375px */
-
-/* Fix the job board sizing */
 /* move the hamburger nav bar so that it drops vertically not horizontally */
 /* Add in data storing and privacy statement  */
 
