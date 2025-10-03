@@ -75,8 +75,6 @@ a {
     border-radius: 2px;
 }
 
-/* Tablet Screen Nav 768px */
-
 @media (max-width: 768px) {
     .main-nav {
         grid-template-areas:
@@ -310,8 +308,6 @@ a {
   }
 }
 
-/* move the hamburger nav bar so that it drops vertically not horizontally */
-/* Add in data storing and privacy statement  */
 
 
 
