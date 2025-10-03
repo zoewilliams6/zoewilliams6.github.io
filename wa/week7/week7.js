@@ -79,9 +79,6 @@ if (contactForm) {
     if (!emailInput.value.trim()) {
       valid = false;
       errorMessage += "Email is required. ";
-    } else if (!/\S+@\S+\.\S+/.test(emailInput.value)) {
-      valid = false;
-      errorMessage += "Email is not valid. ";
     }
 
     if (!valid) {
@@ -92,3 +89,41 @@ if (contactForm) {
     }
   });
 }
+
+
+
+// save form inputs
+if (contactForm) {
+  const nameInput = contactForm.querySelector("#name");
+  const emailInput = contactForm.querySelector("#email");
+  const messageInput = contactForm.querySelector("#message");
+
+  window.addEventListener("load", () => {
+    if (localStorage.getItem("contactData")) {
+      const saved = JSON.parse(localStorage.getItem("contactData"));
+      nameInput.value = saved.name || "";
+      emailInput.value = saved.email || "";
+      messageInput.value = saved.message || "";
+    }
+  });
+
+  // clear form inputs
+  contactForm.addEventListener("input", () => {
+    const data = {
+      name: nameInput.value,
+      email: emailInput.value,
+      message: messageInput.value
+    };
+    localStorage.setItem("contactData", JSON.stringify(data));
+  });
+}
+
+const clearButton = document.querySelector("#clearData");
+if (clearButton) {
+  clearButton.addEventListener("click", () => {
+    localStorage.removeItem("contactData");
+    contactForm.reset();
+    alert("Your saved data has been cleared.");
+  });
+}
+
