@@ -1,0 +1,101 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura", sans-serif;
+  background-color: #f5e9dc;
+  color: #222;
+}
+
+.app {
+  max-width: 550px;
+  margin: 60px auto;
+  background-color: #fffaf5;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px 40px;
+}
+
+header {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  color: #3b260f;
+  margin-bottom: 25px;
+}
+
+.quotes {
+  text-align: center;
+  min-height: 180px;
+}
+
+.quote-text {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 12px 0;
+  margin-top: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-quote {
+  background-color: #b46b45;
+}
+
+.new-quote:hover {
+  background-color: #9e5e3d;
+}
+
+.twitter {
+  background-color: #426b69;
+}
+
+.twitter:hover {
+  background-color: #355654;
+}
+
+.loading-bar {
+  width: 0;
+  height: 6px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #4a2b0f, #b46b45);
+  margin-top: 15px;
+  transition: width 1s ease;
+  display: block;
+}
+
+.loading-bar.active {
+  width: 100%;
+  box-shadow: 0 0 8px rgba(74, 43, 15, 0.5);
+}
+
+.reflection {
+  max-width: 600px;
+  margin: 50px auto; 
+  padding: 20px 40px;      
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3b260f;
+  background-color: #fffaf5;
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+}
