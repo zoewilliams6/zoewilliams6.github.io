@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Trivia Generator</title>
+    <link rel="stylesheet" href="https://use.typekit.net/wgl2klx.css">
+    <link rel="stylesheet" href="week10.css">
+</head>
+<body>
+    <div class="app">
+        <header>TEST YOUR USELESS TRIVIA KNOWLEDGE</header>
+        <section class="quotes">
+          <div class="quote-text" id="js-quote-text"></div>
+          <div class="quote-text" id="js-answer-text"></div>
+          <div id="loading-bar" class="loading-bar"></div>
+        </section>
+        <section class="controls" >
+          <button type="button" id="js-new-quote" class="new-quote button">
+            Generate new useless trivia!
+          </button>
+          <button type="button" id="js-tweet" class="twitter button">
+            And the answer is...!
+          </button>
+          <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
+        </section>
+      </div>
+      <section class="reflection">
+  <p>
+    The extension that I selected was a free API that I found through API Ninjas that generates random trivia. 
+    There were category options but I would've had to pay for a premium account, so all the trivia falls under a general umbrella 
+    (no particular genre). I also added a loading bar that appears once the “show answer” button is pressed. 
+    I was going to add a random image generator API, but I found that it really wouldn’t have made any sense 
+    to have random images appear that had no correlation to the trivia questions themselves.
+  </p>
+
+  <p>
+    My original thought for implementing an API in my project was to use Spotify’s API, which I still plan to do, 
+    but I think my original idea from last week was a bit too ambitious. I might do something along the lines of albums, 
+    artists, and album covers but we’ll see once I get there. I am interested in using Spotify’s API, and I think it has 
+    a lot of useful information, but my concern is the learning curve/implementation process that will come along with it.
+  </p>
+</section>
+      <script src="week10.js"></script>
+</body>
+</html> 
