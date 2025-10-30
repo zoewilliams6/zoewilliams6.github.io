@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latest News Feed</title>
+  <link rel="stylesheet" href="https://use.typekit.net/wgl2klx.css">
+  <link rel="stylesheet" href="week11.css">
+</head>
+<body>
+  <div class="app">
+    <header>LATEST HEADLINES</header>
+
+    <section class="controls-section">
+      <label for="js-topic-select" class="topic-label">Choose a topic:</label>
+      <select id="js-topic-select" class="topic-select">
+        <option value="general">General</option>
+        <option value="business">Business</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="health">Health</option>
+        <option value="science">Science</option>
+        <option value="sports">Sports</option>
+        <option value="technology">Technology</option>
+      </select>
+
+      <button type="button" id="js-get-news" class="button generate-btn">
+        Generate Latest News
+      </button>
+
+      <button type="button" id="js-save-pref" class="button save-btn">
+        Save My Preference
+      </button>
+
+      <button type="button" id="js-clear-data" class="button clear-btn">
+        Clear Saved Data
+      </button>
+
+      <div id="js-loading" class="loading-bar"></div>
+    </section>
+
+    <section id="news-feed" class="news-feed">
+      <p class="placeholder">Select a topic and click “Generate Latest News.”</p>
+    </section>
+  </div>
+
+  <script src="week11.js"></script>
+</body>
+</html>
+
+
