@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Finder</title>
+  <link rel="stylesheet" href="https://use.typekit.net/wgl2klx.css">
+  <link rel="stylesheet" href="week12.css">
+</head>
+<body>
+  <div class="app">
+    <header>LATEST MOVIES</header>
+
+    <section class="controls-section">
+      <label for="js-genre-select" class="topic-label">Choose a genre:</label>
+      <select id="js-genre-select" class="topic-select">
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="romance">Romance</option>
+        <option value="thriller">Thriller</option>
+        <option value="horror">Horror</option>
+        <option value="animation">Animation</option>
+        <option value="documentary">Documentary</option>
+      </select>
+
+      <button type="button" id="js-get-movies" class="button generate-btn">
+        Generate Movies
+      </button>
+
+      <button type="button" id="js-save-pref" class="button save-btn">
+        Save My Preference
+      </button>
+
+      <button type="button" id="js-clear-data" class="button clear-btn">
+        Clear Saved Data
+      </button>
+
+      <div id="js-loading" class="loading-bar"></div>
+    </section>
+
+    <section id="movie-feed" class="news-feed">
+      <p class="placeholder">Select a genre and click “Generate Movies.”</p>
+    </section>
+  </div>
+
+  <script src="week12.js"></script>
+</body>
+</html>
+
+
+
