@@ -3,14 +3,14 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Futura", sans-serif;
-  background-color: #f5e9dc;
-  color: #222;
+  background-color: #faf5ef;
+  color: #2b1b0f; 
 }
 
 .app {
   max-width: 650px;
   margin: 60px auto;
-  background-color: #fffaf5;
+  background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
   padding: 35px 45px;
@@ -20,7 +20,7 @@ header {
   font-size: 28px;
   font-weight: 600;
   text-align: center;
-  color: #3b260f;
+  color: #2b1b0f;
   letter-spacing: 0.5px;
   margin-bottom: 25px;
 }
@@ -32,7 +32,7 @@ header {
 
 .topic-label {
   font-weight: 600;
-  color: #3b260f;
+  color: #2b1b0f;
   display: block;
   margin-bottom: 6px;
   font-size: 16px;
@@ -41,10 +41,10 @@ header {
 .topic-select {
   width: 100%;
   padding: 10px 12px;
-  border: 1px solid #b46b45;
+  border: 1px solid #8c6f57;
   border-radius: 6px;
-  background-color: #fffaf5;
-  color: #3b260f;
+  background-color: #ffffff;
+  color: #2b1b0f;
   font-size: 16px;
   margin-bottom: 15px;
   outline: none;
@@ -52,7 +52,7 @@ header {
 }
 
 .topic-select:focus {
-  border-color: #9e5e3d;
+  border-color: #6f553f;
 }
 
 .button {
@@ -63,40 +63,39 @@ header {
   font-size: 18px;
   padding: 12px 0;
   margin-top: 10px;
-  color: #fff;
+  color: #ffffff; 
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
+/* ✅ NEW ACCESSIBLE BUTTON COLORS */
 .generate-btn {
-  background-color: #b46b45;
+  background-color: #3f2a14;
 }
-
 .generate-btn:hover {
-  background-color: #9e5e3d;
+  background-color: #2e1f10;
 }
 
 .save-btn {
-  background-color: #426b69;
+  background-color: #2d4a48;
 }
-
 .save-btn:hover {
-  background-color: #355654;
+  background-color: #233a38;
 }
 
 .clear-btn {
-  background-color: #a4372d;
+  background-color: #6b1f18;
 }
-
 .clear-btn:hover {
-  background-color: #872a23;
+  background-color: #541812;
 }
 
+/* Loading bar with accessible colors */
 .loading-bar {
   width: 0;
   height: 6px;
   border-radius: 4px;
-  background: linear-gradient(90deg, #4a2b0f, #b46b45);
+  background: linear-gradient(90deg, #2b1b0f, #6f553f);
   margin-top: 15px;
   transition: width 1s ease;
   display: block;
@@ -104,7 +103,7 @@ header {
 
 .loading-bar.active {
   width: 100%;
-  box-shadow: 0 0 8px rgba(74, 43, 15, 0.5);
+  box-shadow: 0 0 8px rgba(30, 20, 10, 0.4);
 }
 
 .news-feed {
@@ -115,8 +114,8 @@ header {
 }
 
 .article {
-  background-color: #fff;
-  border: 1px solid #eee;
+  background-color: #ffffff;
+  border: 1px solid #e6ddd3;
   border-radius: 8px;
   padding: 15px 18px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -130,24 +129,14 @@ header {
 .article h3 {
   margin: 0 0 6px;
   font-size: 18px;
-  color: #3b260f;
+  color: #2b1b0f;
 }
 
 .article p {
   font-size: 15px;
-  color: #4a3a2a;
+  color: #3f3227;
   line-height: 1.4;
   margin-bottom: 8px;
-}
-
-.article a {
-  text-decoration: none;
-  color: #b46b45;
-  font-weight: 600;
-}
-
-.article a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
