@@ -4,7 +4,7 @@ html, body {
   box-sizing: border-box;
   font-family: "Futura", sans-serif;
   background-color: #faf5ef;
-  color: #2b1b0f; 
+  color: #2b1b0f;
 }
 
 .app {
@@ -21,7 +21,6 @@ header {
   font-weight: 600;
   text-align: center;
   color: #2b1b0f;
-  letter-spacing: 0.5px;
   margin-bottom: 25px;
 }
 
@@ -63,12 +62,11 @@ header {
   font-size: 18px;
   padding: 12px 0;
   margin-top: 10px;
-  color: #ffffff; 
+  color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-/* ✅ NEW ACCESSIBLE BUTTON COLORS */
 .generate-btn {
   background-color: #3f2a14;
 }
@@ -90,7 +88,6 @@ header {
   background-color: #541812;
 }
 
-/* Loading bar with accessible colors */
 .loading-bar {
   width: 0;
   height: 6px;
@@ -98,22 +95,20 @@ header {
   background: linear-gradient(90deg, #2b1b0f, #6f553f);
   margin-top: 15px;
   transition: width 1s ease;
-  display: block;
 }
 
 .loading-bar.active {
   width: 100%;
-  box-shadow: 0 0 8px rgba(30, 20, 10, 0.4);
 }
 
-.news-feed {
+.movie-feed {
   margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.article {
+.movie-card {
   background-color: #ffffff;
   border: 1px solid #e6ddd3;
   border-radius: 8px;
@@ -121,22 +116,22 @@ header {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.article:hover {
+.movie-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.article h3 {
+.movie-card h3 {
   margin: 0 0 6px;
   font-size: 18px;
   color: #2b1b0f;
 }
 
-.article p {
+.movie-card p {
   font-size: 15px;
   color: #3f3227;
   line-height: 1.4;
-  margin-bottom: 8px;
+  margin: 0;
 }
 
 @media (max-width: 600px) {
@@ -149,11 +144,11 @@ header {
     font-size: 22px;
   }
 
-  .article h3 {
+  .movie-card h3 {
     font-size: 16px;
   }
 
-  .article p {
+  .movie-card p {
     font-size: 14px;
   }
 }
