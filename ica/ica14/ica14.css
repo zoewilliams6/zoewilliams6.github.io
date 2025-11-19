@@ -1,0 +1,91 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+main, header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #fff;
+  text-shadow:
+    0 0 6px #9b4dff,
+    0 0 12px #ff1ef7;
+}
+
+h2 {
+  font-size: 25px;
+  margin-top: 30px;
+  color: #fff;
+  text-shadow:
+    0 0 6px #9b4dff,
+    0 0 12px #ff1ef7;
+}
+
+h3 {
+  font-size: 20px;
+  color: #fff;
+  text-shadow:
+    0 0 6px #9b4dff,
+    0 0 12px #ff1ef7;
+}
+
+li {
+  font-size: 16px;
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.nav-button {
+  background: transparent;
+  color: #00faff !important;
+  border: 2px solid #00faff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.nav-button:hover {
+  background: #00faff;
+  color: #000 !important;
+  box-shadow: 0 0 12px #00faff, 0 0 20px #00faff;
+}
+
+a {
+  color: #32ff7e;
+}
+
+a:hover {
+  color: #ffee00;
+  text-shadow: 0 0 8px #ffee00;
+}
+
+#line-animation {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+#line-animation svg {
+  width: min(500px, 80vw);
+  max-height: 300px;
+  filter: saturate(1.7);
+}
+
+ul {
+  padding-left: 20px;
+}
